@@ -193,6 +193,58 @@
           </div>
         </div>
       </div>
+
+      <section id="my-keyboards">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h4>My Keyboards</h4>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                  <h5 class="keyboard-name mt-1">ROG Strix</h5>
+                  <img
+                    src="img/keyboards/KeyB1.png"
+                    alt="ROG Strix"
+                    class="keyboard-img"
+                  />
+                  <a href="#" class="btn btn-light keyboard-detail-button"
+                    >Show Details</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                  <h5 class="keyboard-name mt-1">Logitect G</h5>
+                  <img
+                    src="img/keyboards/KeyB2.png"
+                    alt="Logitect G"
+                    class="keyboard-img"
+                  />
+                  <a href="#" class="btn btn-light keyboard-detail-button"
+                    >Show Details</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="keyboard-box">
+                  <h5 class="keyboard-name mt-1">BENQ Zowie</h5>
+                  <img
+                    src="img/keyboards/KeyB3.png"
+                    alt="BENQ Zowie"
+                    class="keyboard-img"
+                  />
+                  <a href="#" class="btn btn-light keyboard-detail-button"
+                    >Show Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -462,6 +514,13 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 35,
+        speed: 1000,
       });
     </script>
   </body>
